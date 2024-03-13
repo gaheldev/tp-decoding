@@ -13,6 +13,15 @@ Mac and Linux already come with `python` preinstalled but not necessarily in the
 | Mac | Download the universal installer [here](https://www.python.org/ftp/python/3.12.2/python-3.12.2-macos11.pkg) | [doc](https://docs.python.org/3/using/mac.html) |
 | Linux | Use your package manager, eg on Ubuntu: `sudo apt install python3` | - |
 
+#### Download the project
+
+*TODO*: use an archive instead
+
+```
+git clone git@github.com:gaheldev/tp-decoding.git
+cd tp-decoding
+```
+
 #### Set up a virtual environment
 
 We're using a virtual environment to manage packages. Virtual environments allow to install python packages inside the project without messing with system-wise dependencies.
@@ -59,3 +68,16 @@ To set up the virtual environment, open a terminal window and follow the steps f
 > [!NOTE]
 > If you work from a terminal tab, make sure to activate the virtual environment before working on the project <br/>
 > Run `deactivate` in your terminal tab to deactivate the virtual environment
+
+#### Install dependencies
+
+   + Windows
+     ```
+     py -m pip install -r requirements.txt
+     ```
+   + Mac and Linux
+     ```
+     python3 -m pip install -r requirements.txt
+     ```
+
+## Run the Jupyter Notebook
