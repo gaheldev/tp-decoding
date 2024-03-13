@@ -23,8 +23,9 @@ Mac and Linux already come with `python` preinstalled but not necessarily in the
    + Mac and Linux
      ```
      python3 -m pip install jupyterlab
+     ```
 
-     
+          
 #### Download the project
 
 *TODO*: use an archive instead
@@ -33,6 +34,7 @@ Mac and Linux already come with `python` preinstalled but not necessarily in the
 git clone git@github.com:gaheldev/tp-decoding.git
 cd tp-decoding
 ```
+
 
 #### Set up a virtual environment
 
@@ -92,6 +94,7 @@ To set up the virtual environment, open a terminal window and follow the steps f
      python3 -m pip install -r requirements.txt
      ```
 
+
 ## 🗒️ Open the Notebook
 
 + Open Jupyter Lab using the shortcut installed on your system.
@@ -100,8 +103,11 @@ To set up the virtual environment, open a terminal window and follow the steps f
 + Check that the correct environment is set up
   ![jupyter_kernel](https://github.com/gaheldev/tp-decoding/assets/78329601/9fb9795b-1591-49a4-a021-3b15149ae07e)
 
-You're ready to start !
+   ➡️ **You're ready to start !**
 
+<br> <br/>
+
+---
 ## ⌨️ Development
 
 #### Git cheatsheet
