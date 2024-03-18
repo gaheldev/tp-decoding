@@ -92,7 +92,7 @@ To set up the virtual environment, open a terminal window and follow the steps f
      python3 -m pip install -r requirements.txt
      ```
 
-### Make the virtual environment accessible to jupyter notebook
+#### Make the virtual environment accessible to jupyter notebook
 
    + Windows
      ```
