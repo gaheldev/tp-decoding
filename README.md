@@ -31,6 +31,13 @@ Mac and Linux already come with `python` preinstalled but not necessarily in the
 *TODO*: use an archive instead
 
 ```
+git clone https://github.com/gaheldev/tp-decoding.git
+cd tp-decoding
+```
+
+
+⚠️ To be able to contribute to the GitHub repo, you'll need to use instead:
+```
 git clone git@github.com:gaheldev/tp-decoding.git
 cd tp-decoding
 ```
