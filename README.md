@@ -73,15 +73,6 @@ To set up the virtual environment, open a terminal window and follow the steps f
      source .venv/bin/activate 
      ```
 
-3. Make the virtual environment accessible to jupyter notebook
-   + Windows
-     ```
-     py -m ipykernel install --user --name .venv --display-name "Python (tp-decoding)"
-     ```
-   + Mac and Linux
-     ```
-     python3 -m ipykernel install --user --name .venv --display-name "Python (tp-decoding)"
-     ```
      
 > [!NOTE]
 > If you work from a jupyter notebook, you won't need to manually activate the virtual environment anymore, just make sure to select the `Python (venv)` kernel
@@ -101,10 +92,20 @@ To set up the virtual environment, open a terminal window and follow the steps f
      python3 -m pip install -r requirements.txt
      ```
 
+### Make the virtual environment accessible to jupyter notebook
+
+   + Windows
+     ```
+     py -m ipykernel install --user --name .venv --display-name "Python (tp-decoding)"
+     ```
+   + Mac and Linux
+     ```
+     python3 -m ipykernel install --user --name .venv --display-name "Python (tp-decoding)"
+     ```
 
 ## 🗒️ Open the Notebook
 
-+ Open Jupyter Lab using the shortcut installed on your system.
++ Open Jupyter Lab using the shortcut installed on your system or by running `jupyter lab` in the terminal
 + A web page should open with a file browser on the left, navigate to the folder where you downloaded the project.
 + Open `notebook.ipynb` by double clicking on it
 + Check that the correct environment is set up
