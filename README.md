@@ -118,6 +118,19 @@ To set up the virtual environment, open a terminal window and follow the steps f
 ---
 ## ⌨️ Development
 
+#### Avoid commiting cell outputs to the repo
+
+That should make versioning easier and keep the repo lightweight.
+Simply run the following command, git will take care of the rest:
+```
+nbstripout --install --attributes .gitattributes
+```
+
+Deactivate the filter with:
+```
+nbstripout --uninstall --attributes .gitattributes
+```
+
 #### Git cheatsheet
 
 | Task | Command |
