@@ -2,6 +2,7 @@ import os
 
 from . import data
 from . import downloader
+from .utils import * # make all utils directly accesible by calling tp.<utils-func>
 
 
 
