@@ -9,7 +9,7 @@ def common_average_reference(X, axis=1):
 
 
 
-def compute_band_filters(bands, fs):
+def compute_band_filters(bands, fs=1000):
     def ws(wp):
         return (0.9 * wp[0],
                 1.1 * wp[1]
