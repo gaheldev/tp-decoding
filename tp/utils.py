@@ -1,5 +1,31 @@
 import numpy as np
 from scipy.signal import iirdesign, sosfilt, convolve
+from librosa.util import frame
+
+
+
+
+def buffering(X, win_size=1000, hop=40, n_buffer=1):
+    """
+        Compute signal's power over overlapping frames of length 'win_size'
+        with hop length of 'hop'
+
+        if n_buffer > 1, each resulting timestep concatenates the n_buffer previous frames to the features
+        
+        return an array of size (trials, features) with features=n_buffer*n_channels
+    """
+    n_channels = X.shape[1]
+    X_buffer = pad(np.power(X, 2))
+    X_buffer = frame(X_buffer, frame_length=win_size, hop_length=hop, axis=0)
+    n_trials = X_buffer.shape[0]
+    # print(np.mean(X_buffer.reshape(n_trials, n_buffer, win_size//n_buffer, n_channels), axis=2))
+    return np.mean(X_buffer.reshape(n_trials,
+                                    n_buffer,
+                                    win_size//n_buffer,
+                                    n_channels),
+                   axis=2
+                   ).reshape(n_trials,
+                             n_buffer*n_channels)
 
 
 
