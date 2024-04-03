@@ -25,20 +25,12 @@ Mac and Linux already come with `python` preinstalled but not necessarily in the
      python3 -m pip install jupyterlab
      ```
 
+   On linux, if you get a pip error you might have to install jupyterlab later in the virtual environment (or now through your package manager)
           
 #### Download the project
 
-*TODO*: use an archive instead
-
 ```
 git clone https://github.com/gaheldev/tp-decoding.git
-cd tp-decoding
-```
-
-
-⚠️ To be able to contribute to the GitHub repo, you'll need to use instead:
-```
-git clone git@github.com:gaheldev/tp-decoding.git
 cd tp-decoding
 ```
 
